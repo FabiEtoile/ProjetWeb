@@ -9,9 +9,6 @@ Bienvenue dans le projet de création d'une entreprise fictive dédiée à l'éd
 
 Notre entreprise LearnIT! se spécialise dans le développement d'une application révolutionnaire d'apprentissage personnalisé. L'objectif est d'offrir aux utilisateurs une expérience éducative unique en générant des emplois du temps sur mesure, adaptés à leurs besoins et objectifs d'apprentissage.
 
-## Caractéristiques Principales
-
-
 
 ## Caractéristiques Principales
 
