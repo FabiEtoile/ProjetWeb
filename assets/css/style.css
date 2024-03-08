@@ -1,0 +1,1159 @@
+/* S'applique a tout les éléments */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+}
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* -- Icone pour remonter tout en haut -- */
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: purple;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+/* Quand la souris est sur l icone */
+
+.back-to-top:hover {
+  background: #ee8b7a;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+#header {
+  background: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+#header .logo h1 {
+  font-size: 36px;
+  padding: 0 0 0 8px;
+  margin: 11px 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.name_span {
+  border-left: 8px solid purple;
+  margin-right: 10px;
+}
+
+.pd-10 {
+  padding: 5px !important;
+}
+
+.section_title {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 1px;
+}
+
+#header .logo h1 a,
+#header .logo h1 a:hover {
+  color: #545454;
+  text-decoration: none;
+}
+
+#header .logo img {
+  margin-bottom: 1px;
+  max-height: 40px;
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+
+/* Ajout pour le bouton du menu burger */
+
+.mobile-nav-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 999;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  #navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Styles pour le menu lorsqu'il est ouvert */
+body.menu-open #navbar {
+  display: block;
+}
+
+  #navbar.active {
+    display: flex;
+  }
+
+  #navbar ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #navbar ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  #navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+  }
+}
+
+/*--------------------------------------------------------------
+# Menu Navigation
+--------------------------------------------------------------*/
+
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+#header {
+  background: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+/* Container dans le header pour flexbox */
+
+#header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .logo {
+  flex-grow: 1;
+}
+
+/* Navigation Menu */
+#navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  align-items: center;
+}
+
+#navbar li {
+  display: inline;
+  padding: 0 15px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #444;
+}
+
+
+
+@media (max-width: 991px) {
+  #header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+#hero {
+  background-image: url('assets/img/slide/slide-1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  color: #444444;
+}
+
+/* Espacement entre nos atouts et les slides */
+
+section {
+  padding: 40px 0;
+  margin-bottom: 50px;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 0 0 80px 0;
+}
+
+.section-bg {
+  background-color: white;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: purple;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+Section Accueil
+--------------------------------------------------------------*/
+.sousheader {
+  padding: 20px 0 20px 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 40px;
+}
+
+.sousheader h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #545454;
+}
+
+.sousheader ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 5px 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.sousheader ol li+li {
+  padding-left: 10px;
+}
+
+.sousheader ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #6e6e6e;
+  content: "/";
+}
+
+/*--------------------------------------------------------------
+# Nos atouts
+--------------------------------------------------------------*/
+.featured {
+  position: relative;
+  z-index: 2;
+}
+/* reglage des 3 boxs */
+.featured .icon-box {
+  padding: 40px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background: #fff;
+  transition: all ease-in-out 0.3s;
+  height: 380px;
+  width: 450px;
+  margin-top: 40000px;
+}
+
+.featured .icon-box i {
+  color: purple;
+  font-size: 42px;
+  margin-bottom: 15px;
+  display: block;
+  line-height: 0;
+}
+
+.featured .icon-box h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.featured .icon-box h3 a {
+  color: #545454;
+  transition: 0.3s;
+}
+
+.featured .icon-box p {
+  color: #545454;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.featured .icon-box:hover {
+  background: purple;
+}
+
+.featured .icon-box:hover i,
+.featured .icon-box:hover h3 a,
+.featured .icon-box:hover p {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+A propos : notre misssion numérique etc
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #545454;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+}
+
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: purple;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* CSS pour définir la taille de l'image */
+.tick-image {
+  width: 15px;
+  height: 15px;
+}
+
+
+.col-lg-4 {
+  margin-bottom: 2px;
+}
+
+.col-lg-6 h3 {
+  margin-bottom: 0px;
+}
+
+.col-lg-6 {
+  margin-top: 0; /* Supprime la marge en haut de la colonne */
+}
+
+.col-lg-4 {
+  margin-bottom: 10px; /* Réduit la marge en bas des colonnes */
+}
+
+.col-lg-6 h3 {
+  margin-bottom: 5px; /* Réduit la marge en bas du titre */
+}
+
+.icon-box p {
+  margin-bottom: 5px; /* Réduit la marge en bas du paragraphe dans les boîtes d'icônes */
+}
+
+/*--------------------------------------------------------------
+# Slides Accueil
+--------------------------------------------------------------*/
+.carousel-item, .carousel-inner {
+  height: 50vh;
+}
+
+.carousel-inner {
+  border-radius: 15px; /* Rayon des angles arrondis */
+  overflow: hidden; /* Empêche les diapositives de dépasser les coins arrondis */
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-item .slide-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée */
+  transition: 0.3s; /* Transition pour l'effet de survol */
+}
+
+.carousel-item .slide-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre portée plus prononcée au survol */
+}
+
+.slide-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.slide-image {
+  width: 50%; /* Taille de l'image */
+  object-fit: cover; /* Assure que l'image couvre tout l'espace */
+}
+
+.slide-text {
+  width: 50%; /* Taille du conteneur de texte */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre le contenu verticalement */
+  align-items: center; /* Centre le contenu horizontalement */
+  padding: 20px;
+  text-align: center; /* Assure que le texte est centré */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.slide-text h2, .slide-text a {
+  margin: 0 0 10px; /* Ajoutez une marge si nécessaire */
+}
+
+.slide-text a {
+  display: inline-block; /* Transforme le lien en bloc pour permettre la marge */
+  background: purple; /* Couleur d'arrière-plan */
+  color: white; /* Couleur du texte */
+  padding: 10px 20px; /* Padding autour du texte */
+  border-radius: 5px; /* Arrondit les coins */
+  text-decoration: none; /* Supprime le soulignement */
+  transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.slide-text a:hover {
+  background: purple; /* Couleur d'arrière-plan au survol */
+}
+
+
+
+.carousel-indicators {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 60px;
+}
+
+
+.indicator {
+  height: 10px;
+  width: 10px;
+  background-color: grey;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: purple;
+}
+
+#featured .row {
+  display: flex;
+  justify-content: space-between; /* Espacement uniforme entre les éléments */
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne en dessous si nécessaire */
+}
+
+#featured .icon-box {
+  flex: 1 1 calc(33.333% - 30px); /* Flexibilité avec une base de un tiers de la largeur, moins les marges */
+  margin: 25px; /* Marge autour de chaque boîte */
+  padding: 20px; /* Espace intérieur pour chaque boîte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour démarquer les boîtes */
+  overflow: auto; /* Ajoute un défilement si le contenu déborde */
+}
+
+@media (max-width: 768px) {
+  #featured .icon-box {
+    flex-basis: 100%; /* Sur les petits écrans, chaque boîte prend la largeur complète */
+    margin: 10px 0; /* Ajustement de la marge pour les petits écrans */
+  }
+}
+
+/* Styles pour la section À propos */
+#about {
+  padding: 40px 0; /* Espace autour de la section */
+  text-align: center; /* Centrage du contenu de la section */
+  margin-right: 50px; /* déplacer la section du coté droit de la page */
+
+
+}
+
+/* Styles pour le titre de la section À propos */
+#about .section_title {
+  font-size: 34px; /* Taille de police du titre */
+  color: #333; /* Couleur du texte */
+  margin-bottom: 10px; /* Espace réduit sous le titre */
+  text-align: center; /* Centrage du titre */
+}
+
+/* Styles pour le conteneur de texte dans la section À propos */
+#about .content {
+  padding: 15px; /* Espace intérieur autour du contenu */
+  margin: 0 auto; /* Centrage et ajustement de l'espace au-dessus du conteneur */
+  max-width: 800px; /* Largeur maximale pour le contrôle du texte */
+  background: white; /* Arrière-plan blanc pour le contenu */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  border-radius: 8px; /* Coins arrondis */
+  text-align: left; /* Alignement du texte à gauche à l'intérieur du conteneur */
+  margin-right: 40px;
+  margin-bottom: 1px;
+}
+
+.custom-about {
+  margin-top: -220px; /* pour remonter dans le site */
+  margin-bottom: 20px;
+
+}
+
+
+
+/* Pour les écrans plus petits */
+@media (max-width: 768px) {
+  #about .content {
+    padding: 10px; /* Moins d'espace intérieur sur les petits écrans */
+  }
+}
+
+
+.content {
+  padding: 40px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  position: static;
+  background: #fff;
+  text-align: left; /* Alignez le texte à gauche */
+}
+
+
+.image-about {
+  width: 37%;
+  margin-top: -3500px;
+  margin-right: 700px;
+
+}
+
+
+
+
+/* OFFRES */
+.offre {
+  width: 100%;
+  min-height: 100vh;
+
+
+
+}
+.decale {
+  margin-left: 81px;
+}
+.offre h2 {
+  color : #fff;
+  font-size: 32px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+
+
+.offres {
+    width: 90% ;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+}
+.prix-col {
+  background: #6e6e6e;
+  padding: 15% 20%;
+  border-radius : 10px;
+  color: #fff;
+  text-align: center;
+
+}
+.prix-col p{
+  font-size: 22px;
+}
+.prix-col h3{
+  font-size: 44px;
+  margin: 20px 0 40px;
+  font-weight: 500;
+}
+
+.prix-col h3 span{
+  font-size: 16px;
+}
+
+.prix-col ul {
+  text-align: left;
+  margin: 20px 0;
+  color: #ddd;
+  list-style: none;
+}
+
+.prix-col ul li {
+  margin: 15px 0;
+}
+
+.prix-col ul li::before {
+  content: '\2022';
+  color: purple;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.prix-col button {
+  width: 100%;
+  padding: 14px 0;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid purple;
+  border-radius: 6px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.prix-col button:hover {
+  background: purple;
+}
+
+.barré {
+  text-decoration: line-through;
+}
+
+/*--------------------------------------------------------------
+# L'équipe
+--------------------------------------------------------------*/
+.team .container {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.team .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.team .membre {
+  flex: 0 0 calc(33.333% - 30px);
+  margin: 15px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 450px;
+}
+
+.team .membre img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+
+
+
+.social img {
+  height: auto;
+  max-height: 30px;
+  vertical-align: middle;
+  max-width: 30px;
+  width: 2000px;
+  margin-right: 15px;
+}
+
+
+.member .social {
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .team .membre {
+    flex: 0 0 100%;
+    margin: 15px 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+
+.contact .form-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.contact .adresse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact .adresse .info-box {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: left;
+}
+
+.contact .adresse .info-box iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  margin-top: 15px;
+}
+
+.contact .coordonnées {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact .coordonnées .info-box {
+  width: 100%;
+  max-width: 45%;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.inputBox [type="submit"] {
+  background: purple;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .contact .form-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .contact .coordonnées .info-box {
+    max-width: 100%;
+  }
+
+  .formBox {
+    width: 100%;
+  }
+
+  .formBox .taille50 {
+    flex-direction: column;
+  }
+
+  .inputBox {
+    width: 100%;
+  }
+
+  .inputBox input,
+  .inputBox textarea,
+  .inputBox [type="submit"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+/* FOOTER  */
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  background-color: #2d2e33;
+  padding: 60px 10%;
+}
+
+ul{
+  list-style: none;
+}
+
+.footer-entier{
+  width: 33%;
+}
+
+
+.footer-entier h4{
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.footer-entier h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background-color: purple;
+  height: 2px;
+  width: 40px;
+}
+
+ul li:not(:last-child){
+  margin-bottom: 8px;
+}
+
+
+ul li a{
+
+  font-size: 19px;
+  text-transform: capitalize;
+  color: grey;
+    text-transform: capitalize;
+    text-decoration: none;
+  transition: 0.4s;
+  font-family: sans-serif;
+}
+
+
+
+
+
+.links a:hover{
+  color: #4d4f55;
+
+}
+
+.footer-entier .contact-info {
+  color: grey;
+  font-family: sans-serif;
+}
+
+.footer-entier .apropos-text {
+  color: grey;
+  font-family: sans-serif;
+}
+
+
+
+
+
+
+
+@media(max-width: 740px){
+  .footer-entier{
+      width: 50%;
+      margin-bottom: 30px;
+      text-align: center;
+  }
+
+  .footer-entier h4::before{
+      all: unset;
+  }
+}
+
+@media(max-width: 555px){
+  .footer-entier{
+      width: 100%;
+  }
+}
+
+
+
+
+
+/* FORMULAIRE */
+.formBox {
+  position: relative;
+  width: 100%;
+}
+
+.formBox .taille50 {
+  display: flex;
+  gap: 20px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.formBox .taille100 .inputBox {
+  width: 100%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+
+.inputBox span {
+  color: purple;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.inputBox input {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+}
+
+.inputBox textarea {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+  resize: none;
+  min-height: 220px;
+  margin-bottom: 10px;
+}
+
+.inputBox [type="submit"] {
+  background: purple;
+  color: #fff;
+  border: none;
+  font-size: 1.1em;
+  max-width: 120px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 15px;
+  border-radius: 20px;
+}
+
+.inputBox ::placeholder {
+  color: #999;
+}
+
+.contact.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+ margin: 70px;
+}
+
+.taille {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .taille {
+    flex-direction: column;
+  }
+
+}
+
+/* Ajout pour la réactivité */
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  #navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+
+  body.menu-open #navbar {
+    display: block;
+  }
+
+  #navbar.active {
+    display: flex;
+  }
+
+  #navbar ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #navbar ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  #navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+  }
+
+  #header .logo h1 {
+    font-size: 24px;
+  }
+
+  .section_title {
+    font-size: 24px;
+  }
+
+  .featured .icon-box {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .image-about {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .back-to-top {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .back-to-top i {
+    font-size: 24px;
+  }
+}
+
